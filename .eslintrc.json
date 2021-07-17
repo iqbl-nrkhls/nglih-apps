@@ -1,0 +1,36 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true,
+        "node": true,
+        "jasmine": true,
+        "codeceptjs/codeceptjs": true
+    },
+    "extends": [
+        "airbnb-base",
+        "plugin:codeceptjs/recommended"
+    ],
+    "parserOptions": {
+        "ecmaVersion": 12,
+        "sourceType": "module"
+    },
+    "rules": {
+        "no-underscore-dangle": 0,
+        "no-param-reassign": 0,
+        "no-restricted-globals": 0,
+        "no-useless-constructor": 0,
+        "import/no-extraneous-dependencies": 0,
+        "import/prefer-default-export": 0,
+        "prefer-destructuring": 0,
+        "no-prototype-builtins": 0,
+        "no-console": 0
+    },
+    "ignorePatterns": [
+        "dist/*",
+        "node_modules/*",
+        "karma.conf.js",
+        "codecept.conf.js",
+        "steps_file.js"
+    ],
+    "plugins": ["jasmine", "codeceptjs"]
+}
